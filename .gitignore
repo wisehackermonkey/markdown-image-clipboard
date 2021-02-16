@@ -17,3 +17,7 @@ node_modules
 
 # Folder config file
 Desktop.ini
+
+# pyinstaller stuff
+__pycache__/
+builds

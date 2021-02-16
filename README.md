@@ -16,7 +16,7 @@
 
 # Summary
 <!-- ### -  *[Quick start](#Quick-start)* -->
-# <!-- ### -  *[Installation](#Installation)* -->
+### -  *[Installation](#Installation)*
 <!-- ### -  *[For developers](#For-developers)* -->
 <!-- ### -  *[Contributors](#Contributors)* -->
 ### -  *[License](#License)*
@@ -46,9 +46,15 @@ echo "PUSHBULLETAPI=<push bullet api key here>" >> .env
 
 -----------------
 # For developers
-<!-- ### 
+### How to build exe for app
+#### windows (simple)
 ```bash
-```  -->
+pyinstaller --noconsole --onefile ./src/Markdown-Image-Clipboard.py
+```
+#### windows (automated)
+```bash
+pyinstaller --noconsole  --specpath ${PWD}/builds --distpath ${PWD}/builds/dist --workpath ${PWD}/builds/build --onefile ./src/Markdown-Image-Clipboard.py ; mv -force ${PWD}/builds/dist/Markdown-Image-Clipboard.exe ${PWD}/windows_build/Markdown-Image-Clipboard.exe ; $date = Get-Date -Format "yyyyMMdd"; Compress-Archive -force -Path ${PWD}/windows_build/Markdown-Image-Clipboard.exe -DestinationPath ${PWD}/windows_build/Markdown-Image-Clipboard_windows_${date}.zip
+``` 
 ### Dev log
 ```bash
 how to interact with pushbullet api
@@ -113,7 +119,11 @@ python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI
 - Behavor
     - copy photo to clipboard
 
-
+ -----------------
+# TODO
+- [ ] text box for specifying pushbullet api key
+- [ ] reduct build size : try change env, or create virtualenv
+- [ ] 
 
 -----------------
 # Contributors
