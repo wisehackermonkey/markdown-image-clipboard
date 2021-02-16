@@ -2,21 +2,23 @@
 ----
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT](https://img.shields.io/github/license/wisehackermonkey/markdown-image-clipboard.svg)](https://github.com/wisehackermonkey/markdown-image-clipboard/blob/master/LICENSE)
-<img src="assets/animation_of_creation_v1.gif" width="500">
+![](assets/2021-02-16-03-23-43.png)
+
 <h2 align="center">Add images from a phone to markdown documentation with ease</h2>
 
-<h4 align="center">This app requires you have a pushbullet account</h4>
-<!-- 
+<h4 align="center">This app requires you have a pushbullet account api key</h4>
+<img src="assets/animation_of_creation_v1.gif" width="500">
+
 
 # Quick start
-### __________________
-##### __________________________
+### Install from [here](https://github.com/wisehackermonkey/markdown-image-clipboard/tags)
+##### Open exe and click run
 ```bash
-``` -->
+```
 
 # Summary
 <!-- ### -  *[Quick start](#Quick-start)* -->
-# <!-- ### -  *[Installation](#Installation)* -->
+### -  *[Installation](#Installation)*
 <!-- ### -  *[For developers](#For-developers)* -->
 <!-- ### -  *[Contributors](#Contributors)* -->
 ### -  *[License](#License)*
@@ -46,9 +48,15 @@ echo "PUSHBULLETAPI=<push bullet api key here>" >> .env
 
 -----------------
 # For developers
-<!-- ### 
+### How to build exe for app
+#### windows (simple)
 ```bash
-```  -->
+pyinstaller --noconsole --onefile ./src/Markdown-Image-Clipboard.py
+```
+#### windows (automated)
+```bash
+pyinstaller --noconsole  --specpath ${PWD}/builds --distpath ${PWD}/builds/dist --workpath ${PWD}/builds/build --onefile ./src/Markdown-Image-Clipboard.py ; mv -force ${PWD}/builds/dist/Markdown-Image-Clipboard.exe ${PWD}/windows_build/Markdown-Image-Clipboard.exe ; $date = Get-Date -Format "yyyyMMdd"; Compress-Archive -force -Path ${PWD}/windows_build/Markdown-Image-Clipboard.exe -DestinationPath ${PWD}/windows_build/Markdown-Image-Clipboard_windows_${date}.zip
+``` 
 ### Dev log
 ```bash
 how to interact with pushbullet api
@@ -113,7 +121,12 @@ python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI
 - Behavor
     - copy photo to clipboard
 
-
+ -----------------
+# TODO
+- [ ] text box for specifying pushbullet api key
+- [x] reduct build size : try change env, or create virtualenv
+- [ ] windows build container for pyinstaller
+- [ ] windows github action auto-build on commit
 
 -----------------
 # Contributors
