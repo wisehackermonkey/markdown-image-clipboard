@@ -2,17 +2,19 @@
 ----
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT](https://img.shields.io/github/license/wisehackermonkey/markdown-image-clipboard.svg)](https://github.com/wisehackermonkey/markdown-image-clipboard/blob/master/LICENSE)
-<img src="assets/animation_of_creation_v1.gif" width="500">
+![](assets/2021-02-16-03-23-43.png)
+
 <h2 align="center">Add images from a phone to markdown documentation with ease</h2>
 
-<h4 align="center">This app requires you have a pushbullet account</h4>
-<!-- 
+<h4 align="center">This app requires you have a pushbullet account api key</h4>
+<img src="assets/animation_of_creation_v1.gif" width="500">
+
 
 # Quick start
-### __________________
-##### __________________________
+### Install from [here](https://github.com/wisehackermonkey/markdown-image-clipboard/tags)
+##### Open exe and click run
 ```bash
-``` -->
+```
 
 # Summary
 <!-- ### -  *[Quick start](#Quick-start)* -->
@@ -122,8 +124,9 @@ python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI
  -----------------
 # TODO
 - [ ] text box for specifying pushbullet api key
-- [ ] reduct build size : try change env, or create virtualenv
-- [ ] 
+- [x] reduct build size : try change env, or create virtualenv
+- [ ] windows build container for pyinstaller
+- [ ] windows github action auto-build on commit
 
 -----------------
 # Contributors

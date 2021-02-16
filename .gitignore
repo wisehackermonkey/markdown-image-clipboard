@@ -21,3 +21,4 @@ Desktop.ini
 # pyinstaller stuff
 __pycache__/
 builds
+windows_build/

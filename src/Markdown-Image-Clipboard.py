@@ -40,7 +40,7 @@ print(pushbullet_websocket_api_url)
 
 
 
-
+# [python - How do you create a Tkinter GUI stop button to break an infinite loop? - Stack Overflow](https://stackoverflow.com/questions/27050492/how-do-you-create-a-tkinter-gui-stop-button-to-break-an-infinite-loop)
 from tkinter import *
 from threading import Thread
 
@@ -72,7 +72,7 @@ def stop():
     ws.close()
 
 root = Tk()
-root.title("Markdown Image Clipboard (pushbullet):")
+root.title("Markdown-Image-Clipboard")
 root.geometry("400x100")
 
 app = Frame(root)
