@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['..\\Markdown-Image-Clipboard.py'],
+a = Analysis(['Markdown-Image-Clipboard.py'],
              pathex=['C:\\Users\\oranm\\github\\markdown-image-clipboard\\src/builds'],
              binaries=[],
              datas=[],
