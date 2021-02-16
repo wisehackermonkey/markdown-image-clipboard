@@ -6,13 +6,13 @@
 <h2 align="center">Add images from a phone to markdown documentation with ease</h2>
 
 <h4 align="center">This app requires you have a pushbullet account</h4>
-
+<!-- 
 
 # Quick start
 ### __________________
 ##### __________________________
 ```bash
-```
+``` -->
 
 # Summary
 <!-- ### -  *[Quick start](#Quick-start)* -->
@@ -25,7 +25,8 @@
 <!-- 
 # Installation
 ```bash
-``` -->
+``` 
+-->
 
 <!-- ----------------- -->
 <!-- # Screenshots -->
@@ -33,15 +34,79 @@
 <!-- -  -->
 
 
-
 <!-- SETUP -->
-<!-- 
+
 -----------------
 # For developers
-### 
+<!-- ### 
 ```bash
+```  -->
+### Dev log
+```bash
+how to interact with pushbullet api
+curl --header 'Access-Token: <your_access_token_here>' \
+     https://api.pushbullet.com/v2/users/me
+
+bash
+PUSHBULLETAPI="<your_access_token_here>"
+curl --header  "Access-Token: ${PUSHBULLETAPI}" https://api.pushbullet.com/v2/users/me
+
+# how to get latest push from user (i want the image from the user)
+curl --header  "Access-Token: ${PUSHBULLETAPI}" https://api.pushbullet.com/v2/pushes
 ``` 
--->
+### what data im looking for
+```bash
+{
+    "accounts": [],
+    "blocks": [],
+    "channels": [],
+    "chats": [],
+    "clients": [],
+    "contacts": [],
+    "devices": [],
+    "grants": [],
+    "pushes": [
+        {
+            "active": true,
+            "iden": "ujwPGnFffbgsjBhE2rsE9c",
+            "created": 1613451908.3619251,
+            "modified": 1613451909.6910138,
+            "type": "file",
+            "file_name": "711VBTMInpL._SL1600_.jpg",
+            "file_type": "image/jpeg",
+            "file_url": "https://dl3.pushbulletusercontent.com/mSnwSJ89SX78Cl9igkkTAyaRXO2Qf1KC/711VBTMInpL._SL1600_.jpg",
+            "image_width": 1600,
+            "image_height": 1200,
+            "image_url": "https://lh3.googleusercontent.com/lYODfrKgRm9nyN0x6hw-SL583g7GnC5aR3Ybx0DmEMgVMa3A0CjC32txRMEQnTjoFHQNjVQG0OHEb1irBUkjtzjCZXT2VItv_WxSwN3V"
+        },
+    ]
+}
+
+pushes[first one ]?.image_url 
+```
+### how to connect to pushbullet websocket for realtime updates
+```bash
+$Env:PUSHBULLETAPI="<your_access_token_here>"
+python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI
+
+python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI 
+```
+
+
+
+# Product definition
+- component
+    - data
+        - url of photo
+        - image data
+        - date
+    - copy to clipboard
+    - pull from pushbullet api image url
+
+- Behavor
+    - copy photo to clipboard
+
+
 
 -----------------
 # Contributors
