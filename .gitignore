@@ -22,5 +22,5 @@ Desktop.ini
 __pycache__/
 builds
 windows_build/
-src/builds
+#src/builds
 windows_build/
