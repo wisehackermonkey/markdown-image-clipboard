@@ -125,7 +125,7 @@ python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI
 # TODO
 - [ ] text box for specifying pushbullet api key
 - [x] reduct build size : try change env, or create virtualenv
-- [ ] windows build container for pyinstaller
+- [ ] auto build exe [JackMcKew/pyinstaller-action-windows-example: Example Repository for Windows PyInstaller Action](https://github.com/JackMcKew/pyinstaller-action-windows-example)
 - [ ] windows github action auto-build on commit
 
 -----------------
