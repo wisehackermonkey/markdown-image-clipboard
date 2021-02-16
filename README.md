@@ -1,7 +1,7 @@
 # markdown-image-clipboard
 ----
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![MIT](https://img.shields.io/github/license/wisehackermonkey/markdown-image-clipboard.svg)](https://github.com/wisehackermonkey/markdown-image-clipboard/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![](assets/2021-02-16-03-23-43.png)
 
 <h2 align="center">Add images from a phone to markdown documentation with ease</h2>
@@ -19,7 +19,7 @@
 # Summary
 <!-- ### -  *[Quick start](#Quick-start)* -->
 ### -  *[Installation](#Installation)*
-<!-- ### -  *[For developers](#For-developers)* -->
+### -  *[For developers](#For-developers)*
 <!-- ### -  *[Contributors](#Contributors)* -->
 ### -  *[License](#License)*
 
@@ -138,8 +138,7 @@ python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI
 -----------------
 # License
 #### MIT © wisehackermonkey
-[![MIT](https://img.shields.io/github/license/wisehackermonkey/markdown-image-clipboard.svg)](https://github.com/wisehackermonkey/markdown-image-clipboard/blob/master/LICENSE).
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ```bash
 by oran collins
 github.com/wisehackermonkey
