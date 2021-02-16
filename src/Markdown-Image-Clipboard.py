@@ -100,7 +100,7 @@ import time
 def on_message(ws, message):
     json_message = dict(json.loads(message))
     
-    print(f"Message: {message=}")
+    print(f"Message: {message}")
     
     if "subtype" in json_message:
         # if json_message["subtype"] == "push":
@@ -115,7 +115,7 @@ def on_message(ws, message):
         image_url =  latest_pushes["pushes"][0]["file_url"]
         last_push_timestap = time_stamp
 
-        print(f"{time_stamp=}, {last_push_timestap=}, {image_url=}")
+        print(f"{time_stamp}, {last_push_timestap}, {image_url}")
         print(latest_pushes)
         mardown_formated_image = f"![created with www.github.com/wisehackermonkey/markdown-image-clipboard]({image_url})"
         pyperclip.copy(mardown_formated_image)
