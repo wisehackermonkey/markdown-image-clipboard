@@ -2,7 +2,7 @@
 ----
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![MIT](https://img.shields.io/github/license/wisehackermonkey/markdown-image-clipboard.svg)](https://github.com/wisehackermonkey/markdown-image-clipboard/blob/master/LICENSE)
-<!-- <img src="assets/NNNNNNNNNNNNN" width="400"> -->
+<img src="assets/animation_of_creation_v1.gif" width="500">
 <h2 align="center">Add images from a phone to markdown documentation with ease</h2>
 
 <h4 align="center">This app requires you have a pushbullet account</h4>
@@ -16,17 +16,25 @@
 
 # Summary
 <!-- ### -  *[Quick start](#Quick-start)* -->
-<!-- ### -  *[Installation](#Installation)* -->
+# <!-- ### -  *[Installation](#Installation)* -->
 <!-- ### -  *[For developers](#For-developers)* -->
 <!-- ### -  *[Contributors](#Contributors)* -->
 ### -  *[License](#License)*
 
 
-<!-- 
 # Installation
+### Download
 ```bash
-``` 
--->
+cd ~
+git clone https://github.com/wisehackermonkey/markdown-image-clipboard.git
+cd markdown-image-clipboard
+pip install -r requirements.txt
+```
+### run
+```bash
+echo "PUSHBULLETAPI=<push bullet api key here>" >> .env
+
+```
 
 <!-- ----------------- -->
 <!-- # Screenshots -->
@@ -93,7 +101,6 @@ python -m websockets wss://stream.pushbullet.com/websocket/$env:PUSHBULLETAPI
 ```
 
 
-
 # Product definition
 - component
     - data
@@ -126,8 +133,6 @@ github.com/wisehackermonkey
 oranbusiness@gmail.com
 ______________________
 ```
-
-
 
 
 
@@ -185,7 +190,7 @@ ______________________
 
 
 
------------------
+<!-- ----------------- -->
 <!-- <img src="assets/KKKKKKKKKKK" width="400"> -->
 <!-- # [Live Demo](https://www._____________.com) -->
 
@@ -272,12 +277,12 @@ ______________________
 [![MIT](https://img.shields.io/github/license/wisehackermonkey/markdown-image-clipboard.svg)](https://github.com/wisehackermonkey/markdown-image-clipboard/blob/master/LICENSE)
  -->
 
-```bash
+<!-- ```bash
 by oran collins
 github.com/wisehackermonkey
 oranbusiness@gmail.com
 ______________________
-```
+``` -->
 
 <!-- ---------------------------------- -->
 <!-- EXTRAS -->

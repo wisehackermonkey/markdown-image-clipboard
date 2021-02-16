@@ -60,7 +60,8 @@ def on_message(ws, message):
 
         print(f"{time_stamp=}, {last_push_timestap=}, {image_url=}")
         print(latest_pushes)
-        # mardown_formated_image """![created with www.github.com/wisehackermonkey/mardown-image-clipboard]
+        mardown_formated_image = f"![created with www.github.com/wisehackermonkey/markdown-image-clipboard]({image_url})"
+        pyperclip.copy(mardown_formated_image)
 
 
         
