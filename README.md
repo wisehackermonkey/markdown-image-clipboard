@@ -55,7 +55,12 @@ pyinstaller --noconsole --onefile ./src/Markdown-Image-Clipboard.py
 ```
 #### windows (automated)
 ```bash
-pyinstaller --noconsole  --specpath ${PWD}/builds --distpath ${PWD}/builds/dist --workpath ${PWD}/builds/build --onefile ./src/Markdown-Image-Clipboard.py ; mv -force ${PWD}/builds/dist/Markdown-Image-Clipboard.exe ${PWD}/windows_build/Markdown-Image-Clipboard.exe ; $date = Get-Date -Format "yyyyMMdd"; Compress-Archive -force -Path ${PWD}/windows_build/Markdown-Image-Clipboard.exe -DestinationPath ${PWD}/windows_build/Markdown-Image-Clipboard_windows_${date}.zip
+cd src
+pip install -r requirements.txt
+pyinstaller --noconsole  --specpath ${PWD}/builds --distpath ${PWD}/builds/dist --workpath ${PWD}/builds/build --onefile ./Markdown-Image-Clipboard.py ; mv -force ${PWD}/builds/dist/Markdown-Image-Clipboard.exe ${PWD}/windows_build/Markdown-Image-Clipboard.exe ; $date = Get-Date -Format "yyyyMMdd"; Compress-Archive -force -Path ${PWD}/windows_build/Markdown-Image-Clipboard.exe -DestinationPath ${PWD}/windows_build/Markdown-Image-Clipboard_windows_${date}.zip
+
+pyinstaller --noconsole --onefile ./src/Markdown-Image-Clipboard.py
+pyinstaller --noconsole  --specpath ${PWD}/builds --distpath ${PWD}/builds/dist --workpath ${PWD}/builds/build --onefile ./src/Markdown-Image-Clipboard.py 
 ``` 
 ### Dev log
 ```bash
